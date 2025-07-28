@@ -41,7 +41,7 @@ const SignUp = () => {
     }
 
     try {
-      const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/v1/auth/signup`, form);
+      const res = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/v1/user/register`, form);
       if (res.data.success) {
         alert('✅ 회원가입 성공');
       } else {

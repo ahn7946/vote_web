@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL,
+  // baseURL: process.env.REACT_APP_API_BASE_URL,
   withCredentials: true, // 리프레시 토큰 쿠키 자동 포함
 });
 
